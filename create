@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 apps=`heroku apps`
 if [[ $apps != *"$1"* ]]; then
