@@ -1,5 +1,7 @@
 FROM openjdk:8-jdk
 
+ADD create.sh
+
 RUN    apt-get update \
     && apt-get install -y software-properties-common curl apt-transport-https git \
     && add-apt-repository -y "deb https://cli-assets.heroku.com/branches/stable/apt ./" \
