@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-ADD create.sh
+ADD create /bin/
 
 RUN    apt-get update \
     && apt-get install -y software-properties-common curl apt-transport-https git \
