@@ -1,0 +1,7 @@
+#!/bin/sh
+
+apps=`heroku apps`
+if [[ $apps != *"$1"* ]]; then
+  echo "Creating new app: $1"
+  heroku apps:create $1
+fi
